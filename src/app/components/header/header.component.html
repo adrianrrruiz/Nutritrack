@@ -1,1 +1,26 @@
-<p>header works!</p>
+<div class="header-container">
+    <div id="current-page">{{ currentPage }}</div> <!-- Texto dinámico -->
+  
+    <nav class="navbar">
+      <ul>
+        <li><a routerLink="/inicio" routerLinkActive="active">Inicio</a></li> <!-- Botón que redirige a /inicio -->
+        <li class="dropdown">
+          <a routerLink="/registros" routerLinkActive="active">Registros</a> <!-- Botón que redirige a /registros -->
+          <ul class="dropdown-menu">
+            <li><a routerLink="/ideas" routerLinkActive="active">Ideas Activas</a></li> <!--  Botón que redirige a /Ideas Activas -->
+            <li><a routerLink="/retos" routerLinkActive="active">Retos Activos</a></li> <!--  Botón que redirige a /Retos Activos -->
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a routerLink="/agregar" routerLinkActive="active">Agregar</a> <!-- Botón que redirige a /agregar -->
+          <ul class="dropdown-menu">
+            <li><a routerLink="/idea-nueva" routerLinkActive="active">Idea Nueva</a></li> <!--  Botón que redirige a /Idea Nueva -->
+            <li><a routerLink="/reto-nuevo" routerLinkActive="active">Reto Nuevo</a></li> <!--  Botón que redirige a /Reto Nueva -->
+          </ul>
+        </li>
+        <li><a routerLink="/perfil" routerLinkActive="active">Perfil</a></li> <!-- Botón que redirige a /perfil -->
+      </ul>
+    </nav>
+    <div class="full-width-border"></div> <!--  Linea Negra -->
+  </div>
+  
