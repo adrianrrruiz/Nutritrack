@@ -1,1 +1,134 @@
-<p>ideas-activas works!</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ideas Innovadoras</title>
+    <link rel="stylesheet" href="ideas-activas.component.css">
+</head>
+<body>
+    <div class="container">
+
+        <h1>Ideas innovadoras</h1>
+        <h2>Ideas innovadora actuales (Activas)</h2>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Nombre Idea">
+        </div>
+
+        <!-- Cards Section -->
+        <div class="cards-container">
+            <div class="card">
+                <img src="assets/idea-nueva/1.png" alt="Cono de chocolate">
+                <h3>Cono de chocolate</h3>
+                <a [routerLink]="['/idea-revision']">
+                    <button class="btn">Revisar</button>
+                </a>
+            </div>
+
+            <div class="card">
+                <img src="assets/idea-nueva/2.png" alt="Paletas de sabores">
+                <h3>Paletas de sabores</h3>
+                <a [routerLink]="['/idea-revision']">
+                    <button class="btn">Revisar</button>
+                </a>
+            </div>
+
+            <div class="card">
+                <img src="assets/idea-nueva/3.png" alt="Tarro de fresas congeladas">
+                <h3>Tarro de fresas congeladas</h3>
+                <a [routerLink]="['/idea-revision']">
+                    <button class="btn">Revisar</button>
+                </a>
+            </div>
+
+            <div class="card">
+                <img src="assets/ideas-activas/4.png" alt="Helado de banana">
+                <h3>Helado de banana</h3>
+                <a [routerLink]="['/idea-revision']">
+                    <button class="btn">Revisar</button>
+                </a>
+            </div>
+            
+            <div class="card">
+                <img src="assets/idea-nueva/3.png" alt="Cono de chocolate">
+                <h3>Cono de chocolate</h3>
+                <a [routerLink]="['/idea-revision']">
+                    <button class="btn">Revisar</button>
+                </a>
+            </div>
+
+            <div class="card">
+                <img src="assets/idea-nueva/1.png" alt="Paletas de sabores">
+                <h3>Paletas de sabores</h3>
+                <a [routerLink]="['/idea-revision']">
+                    <button class="btn">Revisar</button>
+                </a>
+            </div>
+
+            <div class="card">
+                <img src="assets/idea-nueva/4.png" alt="Tarro de fresas congeladas">
+                <h3>Tarro de fresas congeladas</h3>
+                <a [routerLink]="['/idea-revision']">
+                    <button class="btn">Revisar</button>
+                </a>
+            </div>
+
+            <div class="card">
+                <img src="assets/ideas-activas/1.png" alt="Helado de banana">
+                <h3>Helado de banana</h3>
+                <a [routerLink]="['/idea-revision']">
+                    <button class="btn">Revisar</button>
+                </a>
+            </div>
+
+            <div class="card">
+                <img src="assets/idea-nueva/4.png" alt="Cono de chocolate">
+                <h3>Cono de chocolate</h3>
+                <a [routerLink]="['/idea-revision']">
+                    <button class="btn">Revisar</button>
+                </a>
+            </div>
+
+            <div class="card">
+                <img src="assets/idea-nueva/3.png" alt="Paletas de sabores">
+                <h3>Paletas de sabores</h3>
+                <a [routerLink]="['/idea-revision']">
+                    <button class="btn">Revisar</button>
+                </a>
+            </div>
+
+            <div class="card">
+                <img src="assets/idea-nueva/2.png" alt="Tarro de fresas congeladas">
+                <h3>Tarro de fresas congeladas</h3>
+                <a [routerLink]="['/idea-revision']">
+                    <button class="btn">Revisar</button>
+                </a>
+            </div>
+
+            <div class="card">
+                <img src="assets/ideas-activas/1.png" alt="Helado de banana">
+                <h3>Helado de banana</h3>
+                <a [routerLink]="['/idea-revision']">
+                    <button class="btn">Revisar</button>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Pagination Section -->
+        <div class="pagination">
+            <button>&laquo; Previous</button>
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>...</span>
+            <span>67</span>
+            <span>68</span>
+            <button>Next &raquo;</button>
+        </div>
+    </div>
+
+</body>
+</html>

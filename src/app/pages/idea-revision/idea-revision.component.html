@@ -10,88 +10,116 @@
     <div class="container">
         <button class="back-button">Volver</button>
 
-        <div class="content-wrapper">
+        <div class="section">
             <div class="left-column">
                 <h1>Cono de Chocolate</h1>
                 <h2>Datos de la Idea:</h2>
+            </div>
+            <div class="right-column"></div>
+        </div>
 
-                <!-- Nombre de la Idea -->
-                <div class="field-section">
-                    <label for="nombre-idea" class="label">Nombre de la Idea</label>
-                    <input type="text" id="nombre-idea" class="input" value="Guanavanazo Congelado" disabled>
+        <!-- Nombre de la Idea -->
+        <div class="section">
+            <div class="left-column">
+                <label for="nombre-idea" class="label">Nombre de la Idea</label>
+                <input type="text" id="nombre-idea" class="input" value="Guanavanazo Congelado" disabled>
+            </div>
+            <div class="right-column">
+                <div class="correction-section">
+                    <h4>"Nonombe mal"</h4>
+                    <p>Corrección</p>
+                    <p>El nombre está mal escrito y argumentado</p>
                 </div>
+            </div>
+        </div>
 
-                <!-- Descripción de la Idea -->
-                <div class="field-section">
-                    <label for="descripcion-idea" class="label">Descripción de la Idea</label>
-                    <textarea id="descripcion-idea" class="textarea" disabled>Helado de guanabana con Arequipe y bordes de chocolate en la epoca de febrero</textarea>
+        <!-- Descripción de la Idea -->
+        <div class="section">
+            <div class="left-column">
+                <label for="descripcion-idea" class="label">Descripción de la Idea</label>
+                <textarea id="descripcion-idea" class="textarea" disabled>Helado de guanabana con Arequipe y bordes de chocolate en la epoca de febrero</textarea>
+            </div>
+            <div class="right-column">
+                <div class="correction-section">
+                    <h4>"Descripción poco detallada"</h4>
+                    <p>Corrección</p>
+                    <p>Faltan datos de descripción para validar la idea</p>
                 </div>
+            </div>
+        </div>
 
-                <!-- Co-autores -->
+        <!-- Clasificación -->
+        <div class="section">
+            <div class="left-column">
+                <h3>Clasificación</h3>
+                <button class="classification-button" disabled>Helados de leche</button>
+            </div>
+            <div class="right-column">
+                <div class="correction-section">
+                    <h4>"Mal Clasificado"</h4>
+                    <p>Corrección</p>
+                    <p>Clasificación errónea</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Co-autores -->
+        <div class="section">
+            <div class="left-column">
                 <h3>Co - Autores</h3>
                 <div class="co-autores">
                     <label><input type="checkbox" checked disabled> Andres Ramirez <span class="autor-info">Cream Helado | Contaduría</span></label>
                     <label><input type="checkbox" checked disabled> Carolina Mesa <span class="autor-info">Cream Helado | Marketing</span></label>
                     <label><input type="checkbox" checked disabled> Luis Herrera <span class="autor-info">Cream Helado | Repartidor</span></label>
                 </div>
+            </div>
+            <div class="right-column"></div>
+        </div>
 
-                <!-- Implementación -->
+        <!-- Implementación -->
+        <div class="section">
+            <div class="left-column">
                 <h3>¿La idea ya se encuentra implementada?</h3>
                 <div class="implementacion">
                     <label><input type="radio" name="implementacion" checked disabled> Sí</label>
                     <label><input type="radio" name="implementacion" disabled> No</label>
                 </div>
+            </div>
+            <div class="right-column"></div>
+        </div>
 
-                <!-- Clasificación -->
-                <div class="field-section">
-                    <h3>Clasificación</h3>
-                    <button class="classification-button" disabled>Helados de leche</button>
-                </div>
+        <!-- Promotor -->
+        <div class="section">
+            <div class="left-column">
+                <h3>Promotor</h3>
+                <button class="classification-button" disabled>Puntos de Venta</button>
+            </div>
+            <div class="right-column"></div>
+        </div>
 
-                <!-- Promotor -->
-                <div class="field-section">
-                    <h3>Promotor</h3>
-                    <button class="classification-button" disabled>Puntos de Venta</button>
-                </div>
-
-                <!-- Fecha -->
+        <!-- Fecha -->
+        <div class="section">
+            <div class="left-column">
                 <h3>Fecha</h3>
                 <input type="date" class="date-picker" value="2023-08-17" disabled>
             </div>
+            <div class="right-column"></div>
+        </div>
 
-            <div class="right-column">
-                <!-- Revisión del Nombre -->
-                <div class="correction-section">
-                    <h4>"Nonombe mal"</h4>
-                    <p>Corrección</p>
-                    <p>El nombre está mal escrito y argumentado</p>
-                </div>
-
-                <!-- Revisión de la Descripción -->
-                <div class="correction-section">
-                    <h4>"Descripción poco detallada"</h4>
-                    <p>Corrección</p>
-                    <p>Faltan datos de descripción para validar la idea</p>
-                </div>
-
-                <!-- Revisión de la Clasificación -->
-                <div class="correction-section">
-                    <h4>"Mal Clasificado"</h4>
-                    <p>Corrección</p>
-                    <p>Clasificación errónea</p>
-                </div>
-
-                <!-- Review Card -->
-                <div class="review-card">
-                    <p>★★★★★</p>
-                    <h4>Review title</h4>
-                    <p>Review body</p>
-                    <p><strong>Reviewer name</strong> <br> Date</p>
-                </div>
+        <div class="final-review">
+            <div class="review-card">
+                <p>★★★★☆</p> <!-- Example star rating -->
+                <h4>Excellent Flavor and Concept</h4> <!-- Example review title -->
+                <p>The idea is quite innovative, but the description could be improved with more details.</p> <!-- Example review body -->
+                <p><strong>Maria Lopez</strong> <br> Reviewed on: 16/10/2024</p> <!-- Example reviewer name and date -->
             </div>
         </div>
 
-        <button class="save-button">Guardar</button>
+        <div class="save-button-container">
+            <a [routerLink]="['/ideas-activas']">
+                <button class="save-button">Guardar</button>
+            </a>
+        </div>
     </div>
 </body>
 </html>

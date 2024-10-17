@@ -11,10 +11,13 @@ body {
     justify-content: center;
     align-items: flex-start;
     padding: 20px;
+    background-color: #a43535;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px; 
 }
 
 .container {
-    width: 1000px; /* Increased width to better space the left and right sections */
+    width: 1000px; /* Container width to accommodate left and right columns */
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 10px;
@@ -45,39 +48,38 @@ h1, h2, h3 {
     height: 100px;
 }
 
-.content-wrapper {
+.section {
     display: flex;
-    justify-content: space-between; /* Adjust the spacing between the two columns */
+    justify-content: space-between; /* Aligns left and right columns */
+    margin-bottom: 20px;
 }
 
 .left-column {
-    width: 60%; /* Adjusted for more space for the form section */
+    width: 65%; /* Left side for main content */
 }
 
 .right-column {
-    width: 35%; /* Adjusted for the corrections/reviews section */
+    width: 30%; /* Right side for revisions or corrections */
 }
 
-.field-section {
-    margin-bottom: 30px;
+.correction-section {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
 }
 
-.co-autores label {
-    display: flex;
-    align-items: center;
+.correction-section h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.correction-section p {
     margin-bottom: 10px;
     font-size: 14px;
-}
-
-.co-autores .autor-info {
-    margin-left: 10px;
-    font-size: 12px;
-    color: #888;
-}
-
-.implementacion label {
-    margin-right: 20px;
-    font-size: 16px;
+    color: #666;
 }
 
 .classification-button {
@@ -88,6 +90,7 @@ h1, h2, h3 {
     border: 1px solid #ccc;
     border-radius: 5px;
     cursor: not-allowed;
+    font-size: 16px; /* Adjusted font size */
 }
 
 .date-picker {
@@ -97,41 +100,49 @@ h1, h2, h3 {
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #f1f1f1;
+    margin-top: 10px;
 }
 
-.correction-section, .review-card {
+/* Final Review Section */
+.final-review {
+    display: flex;
+    justify-content: center; /* Center the final review card */
+    margin-bottom: 20px;
+}
+
+.review-card {
+    width: 300px; /* Adjust width of the review card */
     background-color: white;
     padding: 15px;
-    margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.correction-section h4, .review-card h4 {
-    margin-bottom: 10px;
-    font-size: 16px;
-}
-
-.correction-section p, .review-card p {
-    margin-bottom: 10px;
-    font-size: 14px;
-    color: #666;
+    text-align: center; /* Center the content inside the card */
 }
 
 .review-card p {
+    margin-bottom: 10px;
+}
+
+.review-card h4 {
+    margin-bottom: 5px;
     font-size: 18px;
 }
 
+/* Centered Save Button */
+.save-button-container {
+    display: flex;
+    justify-content: center; /* Center the button */
+}
+
 .save-button {
-    width: 100%;
+    width: 150px;
     padding: 15px;
     background-color: #333;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 20px;
 }
 
 .save-button:hover {

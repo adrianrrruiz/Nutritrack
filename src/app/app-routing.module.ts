@@ -18,12 +18,13 @@ const routes: Routes = [
   { path: 'registros', component: RegistrosComponent },
   { path: 'agregar', component: AgregarComponent },
   { path: 'perfil', component: PerfilComponent },
-  { path: 'ideas', component: IdeasActivasComponent }, // Ruta para Ideas Activas
+  { path: 'ideas-activas', component: IdeasActivasComponent }, // Ruta para Ideas Activas
   { path: 'retos', component: RetosActivosComponent }, // Ruta para Retos Activos
   { path: 'idea-nueva', component: IdeaNuevaComponent }, // Ruta para Nueva Idea
   { path: 'reto-nuevo', component: RetoNuevoComponent }, // Ruta para Nuevo Reto
   { path: 'idea-details', component: IdeaDetailsComponent },
   { path: 'idea-revision', component: IdeaRevisionComponent },
+  { path: 'ideas-activas', component: IdeasActivasComponent },
 ];
 
 @NgModule({
