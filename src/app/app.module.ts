@@ -15,6 +15,9 @@ import { RetosActivosComponent } from './pages/retos-activos/retos-activos.compo
 import { IdeaNuevaComponent } from './pages/idea-nueva/idea-nueva.component';
 import { RetoNuevoComponent } from './pages/reto-nuevo/reto-nuevo.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { IdeaDetailsComponent } from './pages/idea-details/idea-details.component';
+import { IdeaRevisionComponent } from './pages/idea-revision/idea-revision.component';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +33,9 @@ import { FooterComponent } from './components/footer/footer.component';
     IdeaNuevaComponent,
     RetoNuevoComponent,
     FooterComponent,
-    FooterComponent
+    FooterComponent,
+    IdeaDetailsComponent,
+    IdeaRevisionComponent
   ],
   imports: [
     BrowserModule,

@@ -47,6 +47,9 @@ updateCurrentPage(url: string): void {
       case '/reto-nuevo':
         this.currentPage = 'Nuevo Reto';
         break;
+        case '/idea-details':
+        this.currentPage = 'Detalles de la Idea';
+        break;
       default:
         this.currentPage = 'Página Desconocida';
     }

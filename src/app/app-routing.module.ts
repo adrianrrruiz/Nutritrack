@@ -9,6 +9,8 @@ import { IdeasActivasComponent } from './pages/ideas-activas/ideas-activas.compo
 import { RetosActivosComponent } from './pages/retos-activos/retos-activos.component';
 import { IdeaNuevaComponent } from './pages/idea-nueva/idea-nueva.component';
 import { RetoNuevoComponent } from './pages/reto-nuevo/reto-nuevo.component';
+import { IdeaDetailsComponent } from './pages/idea-details/idea-details.component';
+import { IdeaRevisionComponent } from './pages/idea-revision/idea-revision.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -20,6 +22,8 @@ const routes: Routes = [
   { path: 'retos', component: RetosActivosComponent }, // Ruta para Retos Activos
   { path: 'idea-nueva', component: IdeaNuevaComponent }, // Ruta para Nueva Idea
   { path: 'reto-nuevo', component: RetoNuevoComponent }, // Ruta para Nuevo Reto
+  { path: 'idea-details', component: IdeaDetailsComponent },
+  { path: 'idea-revision', component: IdeaRevisionComponent },
 ];
 
 @NgModule({
