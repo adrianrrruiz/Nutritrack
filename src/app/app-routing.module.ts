@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core'; 
 import { RouterModule, Routes } from '@angular/router';
-import { LandingComponent } from './pages/landing/landing.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { RegistrosComponent } from './pages/registros/registros.component';
 import { AgregarComponent } from './pages/agregar/agregar.component';
@@ -13,8 +12,9 @@ import { IdeaDetailsComponent } from './pages/idea-details/idea-details.componen
 import { IdeaRevisionComponent } from './pages/idea-revision/idea-revision.component';
 import { BuscadorComponent } from './pages/buscador/buscador.component';
 
+
 const routes: Routes = [
-  { path: '', component: LandingComponent },
+  { path: '', component: InicioComponent },
   { path: 'inicio', component: InicioComponent },
   { path: 'registros', component: RegistrosComponent },
   { path: 'agregar', component: AgregarComponent },
