@@ -1,1 +1,35 @@
-<p>inicio works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="inicio.component.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="content-wrapper">
+        <div class="video-box">
+          <iframe 
+            src="https://www.youtube.com/embed/B9lD4xk99es?autoplay=1&mute=1&loop=1&playlist=B9lD4xk99es&controls=0&showinfo=0&modestbranding=1" 
+            frameborder="0" 
+            allow="autoplay; encrypted-media" 
+            allowfullscreen 
+            style="width: 100%; height: 100%; border-radius: 10px;">
+          </iframe>
+        </div>
+        
+        <div class="text-box">
+            <h2>NutriTrack</h2>
+            <h3>(Crem Helado)</h3>
+            <a [routerLink]="['/']">
+                <button class="btn-buscar">Buscar más...</button>
+            </a>
+
+            <a [routerLink]="['/idea-revision']">
+                <button class="btn">Revisar</button>
+            </a>
+        </div>
+    </div>      
+</body>
+</html>

@@ -1,0 +1,63 @@
+.content-wrapper {
+  display: flex;
+  flex-direction: row; /* Organiza los elementos en fila (horizontal) */
+  width: 100%;
+  height: 73vh; /* Limitar la altura a 65% de la ventana */
+  align-items: center;
+  justify-content: center;
+  background-color: #a43535;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px; 
+}
+
+.video-box {
+  width: 50%; /* Ocupa el 50% del ancho */
+  height: 100%; /* Asegura que ocupe toda la altura disponible */
+  padding: 20px; /* Espacio interno para que el video no toque los bordes */
+  border-radius: 20px;
+}
+
+.text-box {
+  width: 50%; /* Ocupa el 50% del ancho */
+  display: flex;
+  flex-direction: column; /* Coloca los elementos verticalmente */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px; /* Espacio alrededor del texto */
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: 'Raleway', serif;
+  margin: 0;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: 'Raleway', serif;
+  margin-top: 10px; /* Añade un pequeño margen entre los textos */
+}
+
+.btn-buscar {
+  background-color: #ffffff; /* Color de fondo del botón */
+  color: #a43535; /* Color del texto */
+  border: 2px solid #a43535; /* Borde del botón */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño del texto */
+  font-family: Arial, sans-serif; /* Fuente del texto */
+  font-weight: bold; /* Texto en negrita */
+  cursor: pointer; /* Cursor en forma de mano */
+  margin-top: 15px; /* Espacio entre el botón y el título */
+  transition: background-color 0.3s ease; /* Efecto de transición en el hover */
+}
+
+.btn-buscar:hover {
+  background-color: #a43535; /* Color de fondo al hacer hover */
+  color: #ffffff; /* Color del texto al hacer hover */
+}

@@ -11,6 +11,7 @@ import { IdeaNuevaComponent } from './pages/idea-nueva/idea-nueva.component';
 import { RetoNuevoComponent } from './pages/reto-nuevo/reto-nuevo.component';
 import { IdeaDetailsComponent } from './pages/idea-details/idea-details.component';
 import { IdeaRevisionComponent } from './pages/idea-revision/idea-revision.component';
+import { BuscadorComponent } from './pages/buscador/buscador.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'idea-details', component: IdeaDetailsComponent },
   { path: 'idea-revision', component: IdeaRevisionComponent },
   { path: 'ideas-activas', component: IdeasActivasComponent },
+  { path: 'buscador', component: BuscadorComponent },
 ];
 
 @NgModule({
