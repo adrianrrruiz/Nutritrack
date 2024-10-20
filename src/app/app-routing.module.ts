@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core'; 
 import { RouterModule, Routes } from '@angular/router';
-import { LandingComponent } from './pages/landing/landing.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { RegistrosComponent } from './pages/registros/registros.component';
 import { AgregarComponent } from './pages/agregar/agregar.component';
@@ -11,9 +10,11 @@ import { IdeaNuevaComponent } from './pages/idea-nueva/idea-nueva.component';
 import { RetoNuevoComponent } from './pages/reto-nuevo/reto-nuevo.component';
 import { IdeaDetailsComponent } from './pages/idea-details/idea-details.component';
 import { IdeaRevisionComponent } from './pages/idea-revision/idea-revision.component';
+import { BuscadorComponent } from './pages/buscador/buscador.component';
+
 
 const routes: Routes = [
-  { path: '', component: LandingComponent },
+  { path: '', component: InicioComponent },
   { path: 'inicio', component: InicioComponent },
   { path: 'registros', component: RegistrosComponent },
   { path: 'agregar', component: AgregarComponent },
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'idea-details', component: IdeaDetailsComponent },
   { path: 'idea-revision', component: IdeaRevisionComponent },
   { path: 'ideas-activas', component: IdeasActivasComponent },
+  { path: 'buscador', component: BuscadorComponent },
 ];
 
 @NgModule({

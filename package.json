@@ -20,6 +20,7 @@
     "@angular/router": "^16.2.0",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
+    "flowbite": "^2.5.2",
     "nutritrack": "file:",
     "primeicons": "^7.0.0",
     "primeng": "^16.9.1",
