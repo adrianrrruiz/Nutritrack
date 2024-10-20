@@ -1,0 +1,35 @@
+<div class="bg-[#f9fafb]">
+  <img
+    src="/assets/img/Imagix_Logo.png"
+    class="logo"
+    id="toggleSidebar"
+    alt="Nutritrack Logo"
+  />
+
+  <aside id="sidebar">
+    <nav
+      class="h-100 d-flex flex-column justify-content-between align-items-start"
+    >
+      <p-panelMenu [model]="items"></p-panelMenu>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a href="../" class="nav-link mb-2 font-normal"
+            ><i class="bi bi-box-arrow-left me-3 text-[var(--color-1)]"></i
+            >Logout</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </aside>
+  <header class="header-2">
+    <p class="mb-0 mr-4">{{ "¡Bienvenid@ " + "usuario" + "!" }}</p>
+    <img
+      class="rounded-full object-cover"
+      src="https://img.freepik.com/foto-gratis/apuesto-joven-brazos-cruzados-sobre-fondo-blanco_23-2148222620.jpg?t=st=1729382093~exp=1729385693~hmac=c7985703a41c4e585b3a965a83e1036cb4e5045d6f550cd706a7dac90f88165b&w=740"
+      alt="User photo"
+    />
+  </header>
+  <main class="bg-[#f9fafb]" id="content">
+    <ng-content></ng-content>
+  </main>
+</div>

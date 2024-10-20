@@ -17,7 +17,12 @@ import { RetoNuevoComponent } from './pages/reto-nuevo/reto-nuevo.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { IdeaDetailsComponent } from './pages/idea-details/idea-details.component';
 import { IdeaRevisionComponent } from './pages/idea-revision/idea-revision.component';
+import { LayoutComponent } from './components/layout/layout.component';
 
+// PrimeNG Components
+import { SidebarModule } from 'primeng/sidebar';
+import { ButtonModule } from 'primeng/button';
+import { PanelMenuModule } from 'primeng/panelmenu';
 
 @NgModule({
   declarations: [
@@ -35,12 +40,16 @@ import { IdeaRevisionComponent } from './pages/idea-revision/idea-revision.compo
     FooterComponent,
     FooterComponent,
     IdeaDetailsComponent,
-    IdeaRevisionComponent
+    IdeaRevisionComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SidebarModule,
+    ButtonModule,
+    PanelMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
