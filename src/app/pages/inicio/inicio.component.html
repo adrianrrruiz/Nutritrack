@@ -1,8 +1,50 @@
 <app-layout>
-  <img src="assets/inicio/logo.png" alt="">
-  <div class="hero-text">
-      <h1>Ideas innovadoras</h1>
-      <p>Tus ideas pueden marcar la diferencia. Únete al desafío de innovación.</p>
-      <button>Comparte tu idea</button>
+  <div class="flex">
+    <div class="container">
+      <img src="assets/inicio/logo.png" alt="Logo">
+      <div class="hero-text">
+        <h1>Ideas innovadoras</h1>
+        <p>Tus ideas pueden marcar la diferencia. Únete al desafío de innovación.</p>
+        <button>Comparte tu idea</button>
+      </div>
+    </div>
+    <div class="description">
+      <h2>"¿Qué es el programa de innovación?"</h2>
+      <p>
+        "En Crem Helado, creemos en el poder de las ideas innovadoras. Este espacio está creado para que puedas contribuir con propuestas que mejoren nuestros productos, procesos y servicios."
+      </p>
+    </div>
+    <div class="steps">
+      
+    </div>
+    <div class="accordion">
+      <p-accordion [activeIndex]="0">
+        <p-accordionTab header="¿Cómo puedo participar en el proyecto de innovación?">
+            <p>
+              Para participar, simplemente haz clic en el botón "Comparte tu idea", inicia sesión con tus credenciales, y sigue los pasos para enviar tu propuesta.
+            </p>
+        </p-accordionTab>
+        <p-accordionTab header="¿Qué tipo de ideas puedo enviar?">
+            <p>
+              Puedes enviar cualquier idea que ayude a mejorar productos, procesos, o servicios dentro de Crem Helado. ¡Creatividad sin límites!
+            </p>
+        </p-accordionTab>
+        <p-accordionTab header="¿Quién puede enviar ideas?">
+            <p>
+              Todos los empleados de Crem Helado pueden participar en este programa de innovación. No importa tu puesto, ¡todas las ideas son bienvenidas!
+            </p>
+        </p-accordionTab>
+        <p-accordionTab header="¿Qué pasa después de enviar mi idea?">
+          <p>
+            Una vez enviada, tu idea será revisada por un comité de innovación. Si es seleccionada, recibirás retroalimentación y seguimiento sobre su posible implementación.
+          </p>
+      </p-accordionTab>
+      <p-accordionTab header="¿Hay premios para las mejores ideas?">
+        <p>
+          ¡Si!, si tu idea es seleccionada en el comite de innovacion seras premiado.
+        </p>
+    </p-accordionTab>
+    </p-accordion>
+    </div>
   </div>
 </app-layout>
