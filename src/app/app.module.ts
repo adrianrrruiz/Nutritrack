@@ -19,6 +19,8 @@ import { RegistrosComponent } from './pages/registros/registros.component';
 import { RetoNuevoComponent } from './pages/reto-nuevo/reto-nuevo.component';
 import { RetosActivosComponent } from './pages/retos-activos/retos-activos.component';
 import { InicioUsuarioComponent } from './pages/inicio-usuario/inicio-usuario.component';
+import { HeaderUsuarioComponent } from './components/header-usuario/header-usuario.component';
+import { LayoutUsuarioComponent } from './components/layout-usuario/layout-usuario.component';
 
 // PrimeNG Components
 import { SidebarModule } from 'primeng/sidebar';
@@ -47,7 +49,9 @@ import { BadgeModule } from 'primeng/badge';
     IdeaRevisionComponent,
     LayoutComponent,
     BuscadorComponent,
-    InicioUsuarioComponent
+    InicioUsuarioComponent,
+    HeaderUsuarioComponent,
+    LayoutUsuarioComponent
   ],
   imports: [
     BrowserModule,

@@ -1,132 +1,134 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ideas Innovadoras</title>
-    <link rel="stylesheet" href="idea-nueva.component.css">
-</head>
-<body>
-    <div class="container">
-        <button class="back-button"> <a [routerLink]="['/ideas-activas']">Todas las Ideas Innovadora</a></button>
-        
-        <h1>Ideas innovadora</h1>
+<app-layout-usuario>
+  <h1>Ideas innovadora</h1>
 
-        <label for="nombre-idea">Ideas innovadora actuales (Activas)</label>
+  <label for="nombre-idea">Ideas innovadora actuales (Activas)</label>
 
-        <div class="search-container">
-            <input type="text" id="search-bar" placeholder="Nombre Idea">
-        </div>
+  <div class="search-container">
+    <input type="text" id="search-bar" placeholder="Nombre Idea" />
+  </div>
 
-        <!-- Cards Section -->
-        <div class="cards-container">
-            <div class="card">
-                <img src="assets/idea-nueva/1.png" alt="Cono de chocolate">
-                <h3>Cono de chocolate</h3>
-                <!-- Link to the idea-details page -->
-                <a [routerLink]="['/idea-details']">
-                    <button>Revisar</button>
-                </a>
-            </div>
-        
-            <div class="card">
-                <img src="assets/idea-nueva/2.png" alt="Paletas de sabores">
-                <h3>Paletas de sabores</h3>
-                <!-- Link to the idea-details page -->
-                <a [routerLink]="['/idea-details']">
-                    <button>Revisar</button>
-                </a>
-            </div>
-        
-            <div class="card">
-                <img src="assets/idea-nueva/3.png" alt="Tarro de fresas congeladas">
-                <h3>Tarro de fresas congeladas</h3>
-                <!-- Link to the idea-details page -->
-                <a [routerLink]="['/idea-details']">
-                    <button>Revisar</button>
-                </a>
-            </div>
-        
-            <div class="card">
-                <img src="assets/idea-nueva/4.png" alt="Helado de banana">
-                <h3>Helado de banana</h3>
-                <!-- Link to the idea-details page -->
-                <a [routerLink]="['/idea-details']">
-                    <button>Revisar</button>
-                </a>
-            </div>
-        </div>
-        
-        <!-- Pagination -->
-        <div class="pagination">
-            <button>&laquo; Previous</button>
-            <span>1</span>
-            <span>2</span>
-            <span>3</span>
-            <span>...</span>
-            <span>67</span>
-            <span>68</span>
-            <button>Next &raquo;</button>
-        </div>
-
-        <!-- Form Section -->
-        <div class="form-section">
-            <label for="nombre-idea">Nombre de la Idea</label>
-            <input type="text" id="nombre-idea" value="Helado de guanabana con Arequipe y bordes de chocolate en la epoca de febrero">
-
-            <label for="descripcion-idea">Descripción de la Idea</label>
-            <textarea id="descripcion-idea" >Helado de guanabana con Arequipe y bordes de chocolate en la epoca de febrero</textarea>
-
-            <!-- IA Suggested Titles -->
-            <label for="nombre-idea">Títulos Sugeridos (IA)</label>
-            <div class="ia-suggestions">
-                <button>Guanavanazo Congelado </button>
-                <button>Postre de Guanabana</button>
-                <button>Manjar de Guanabana</button>
-                <button>Guanavanazo</button>
-            </div>
-
-            <!-- Co-authors -->
-            <label for="nombre-idea">Co - Autores</label>
-            <div class="co-autores">
-                <h2><input type="checkbox" checked> Andres Ramirez <span class="autor-info">Cream Helado | Contaduría</span></h2>
-                <h2><input type="checkbox" checked> Carolina Mesa <span class="autor-info">Cream Helado | Marketing</span></h2>
-                <h2><input type="checkbox" checked> Luis Herrera <span class="autor-info">Cream Helado | Repartidor</span></h2>
-            </div>
-
-            <!-- Implemented Option -->
-            <label for="nombre-idea">¿La idea ya se encuentra implementada?</label>
-            <div class="implementacion">
-                <label><input type="radio" name="implementacion" checked> Sí</label>
-                <label><input type="radio" name="implementacion"> No</label>
-            </div>
-
-            <!-- Clasificaciones ideales -->
-            <label for="nombre-idea">Clasificaciones ideales</label>
-            <div class="classifications">
-                <button>Helados de crema</button>
-                <button>Helados de leche</button>
-                <button>Helados de agua</button>
-                <button>Otros</button>
-            </div>
-
-            <!-- Promotores -->
-            <label for="nombre-idea">Promotores</label>
-            <div class="promotores">
-                <button>Puntos de Venta</button>
-                <button>Eventos</button>
-                <button>Distribuciones</button>
-                <button>Otros</button>
-            </div>
-
-            <!-- Calendar for possible meetings -->
-            <label for="nombre-idea">Posibles horarios para reunión</label>
-            <div class="calendar-section">
-                <input type="date" id="date1" value="2023-08-17">
-                <input type="date" id="date2" value="2023-08-22">
-                <input type="date" id="date3" value="2023-08-30">
-            </div>
-        </div>
+  <!-- Cards Section -->
+  <div class="cards-container">
+    <div class="card">
+      <img src="assets/idea-nueva/1.png" alt="Cono de chocolate" />
+      <h3>Cono de chocolate</h3>
+      <!-- Link to the idea-details page -->
+      <a [routerLink]="['/idea-details']">
+        <button>Revisar</button>
+      </a>
     </div>
-</body>
-</html>
+
+    <div class="card">
+      <img src="assets/idea-nueva/2.png" alt="Paletas de sabores" />
+      <h3>Paletas de sabores</h3>
+      <!-- Link to the idea-details page -->
+      <a [routerLink]="['/idea-details']">
+        <button>Revisar</button>
+      </a>
+    </div>
+
+    <div class="card">
+      <img src="assets/idea-nueva/3.png" alt="Tarro de fresas congeladas" />
+      <h3>Tarro de fresas congeladas</h3>
+      <!-- Link to the idea-details page -->
+      <a [routerLink]="['/idea-details']">
+        <button>Revisar</button>
+      </a>
+    </div>
+
+    <div class="card">
+      <img src="assets/idea-nueva/4.png" alt="Helado de banana" />
+      <h3>Helado de banana</h3>
+      <!-- Link to the idea-details page -->
+      <a [routerLink]="['/idea-details']">
+        <button>Revisar</button>
+      </a>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="pagination">
+    <button>&laquo; Previous</button>
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>...</span>
+    <span>67</span>
+    <span>68</span>
+    <button>Next &raquo;</button>
+  </div>
+
+  <!-- Form Section -->
+  <div class="form-section">
+    <label for="nombre-idea">Nombre de la Idea</label>
+    <input
+      type="text"
+      id="nombre-idea"
+      value="Helado de guanabana con Arequipe y bordes de chocolate en la epoca de febrero"
+    />
+
+    <label for="descripcion-idea">Descripción de la Idea</label>
+    <textarea id="descripcion-idea">
+Helado de guanabana con Arequipe y bordes de chocolate en la epoca de febrero</textarea
+    >
+
+    <!-- IA Suggested Titles -->
+    <label for="nombre-idea">Títulos Sugeridos (IA)</label>
+    <div class="ia-suggestions">
+      <button>Guanavanazo Congelado</button>
+      <button>Postre de Guanabana</button>
+      <button>Manjar de Guanabana</button>
+      <button>Guanavanazo</button>
+    </div>
+
+    <!-- Co-authors -->
+    <label for="nombre-idea">Co - Autores</label>
+    <div class="co-autores">
+      <h2>
+        <input type="checkbox" checked /> Andres Ramirez
+        <span class="autor-info">Cream Helado | Contaduría</span>
+      </h2>
+      <h2>
+        <input type="checkbox" checked /> Carolina Mesa
+        <span class="autor-info">Cream Helado | Marketing</span>
+      </h2>
+      <h2>
+        <input type="checkbox" checked /> Luis Herrera
+        <span class="autor-info">Cream Helado | Repartidor</span>
+      </h2>
+    </div>
+
+    <!-- Implemented Option -->
+    <label for="nombre-idea">¿La idea ya se encuentra implementada?</label>
+    <div class="implementacion">
+      <label><input type="radio" name="implementacion" checked /> Sí</label>
+      <label><input type="radio" name="implementacion" /> No</label>
+    </div>
+
+    <!-- Clasificaciones ideales -->
+    <label for="nombre-idea">Clasificaciones ideales</label>
+    <div class="classifications">
+      <button>Helados de crema</button>
+      <button>Helados de leche</button>
+      <button>Helados de agua</button>
+      <button>Otros</button>
+    </div>
+
+    <!-- Promotores -->
+    <label for="nombre-idea">Promotores</label>
+    <div class="promotores">
+      <button>Puntos de Venta</button>
+      <button>Eventos</button>
+      <button>Distribuciones</button>
+      <button>Otros</button>
+    </div>
+
+    <!-- Calendar for possible meetings -->
+    <label for="nombre-idea">Posibles horarios para reunión</label>
+    <div class="calendar-section">
+      <input type="date" id="date1" value="2023-08-17" />
+      <input type="date" id="date2" value="2023-08-22" />
+      <input type="date" id="date3" value="2023-08-30" />
+    </div>
+  </div>
+</app-layout-usuario>
