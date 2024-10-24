@@ -1,0 +1,73 @@
+<!-- Main container to ensure full screen coverage -->
+<div class="h-screen flex flex-col">
+  <!-- Header -->
+  <header class="flex justify-between items-center py-3 px-4">
+    <!-- Logo -->
+    <div class="flex items-center">
+      <img
+        src="/assets/img/Nutritrack_Paleta_Horizontal_Negra.png"
+        class="h-10 w-auto"
+        alt="Nutritrack Logo"
+      />
+    </div>
+
+    <!-- User Image and Notification Bell -->
+    <div class="flex items-center space-x-4">
+      <!-- Notification Bell -->
+      <div class="relative mr-2">
+        <i class="bi bi-bell text-3xl" pBadge severity="danger"></i>
+      </div>
+
+      <div class="relative">
+        <img
+          class="rounded-full object-cover h-10 w-10 border-2 border-gray-300"
+          src="https://img.freepik.com/foto-gratis/apuesto-joven-brazos-cruzados-sobre-fondo-blanco_23-2148222620.jpg?t=st=1729382093~exp=1729385693~hmac=c7985703a41c4e585b3a965a83e1036cb4e5045d6f550cd706a7dac90f88165b&w=740"
+          alt="User photo"
+        />
+      </div>
+    </div>
+  </header>
+
+  <!-- Centered Search Bar with Title -->
+  <div class="flex-grow flex flex-col items-center justify-center space-y-6">
+    <!-- Text above search bar -->
+    <h1 class="text-3xl font-bold text-gray-700 text-center">
+      El futuro de los helados comienza con una
+      <span class="text-emerald-300">idea</span>
+    </h1>
+
+    <!-- Search Bar -->
+    <div class="relative w-3/5">
+      <input
+        type="text"
+        placeholder="Envía tu idea de helado innovador..."
+        class="w-full p-4 pl-10 text-lg border border-gray-300 rounded-full shadow-md focus:outline-none focus:border-black focus:ring-2 focus:ring-black"
+      />
+      <!-- Ice Cream Button -->
+      <button
+        class="absolute top-1/2 right-3 bg-black text-white rounded-full h-12 w-12 flex items-center justify-center shadow-md transform -translate-y-1/2 hover:!bg-emerald-300 hover:text-black"
+      >
+        <i class="bi bi-lightbulb"></i>
+      </button>
+    </div>
+
+    <!-- Buttons below the search bar -->
+    <div class="flex space-x-4 mt-4">
+      <button
+        class="bg-white text-gray-700 font-semibold py-2 px-4 rounded-full shadow-md border border-gray-300 hover:bg-gray-100 hover:-translate-y-1 transition-transform duration-200"
+      >
+        Crear una idea
+      </button>
+      <button
+        class="bg-white text-gray-700 font-semibold py-2 px-4 rounded-full shadow-md border border-gray-300 hover:bg-gray-100 hover:-translate-y-1 transition-transform duration-200"
+      >
+        Explorar retos
+      </button>
+      <button
+        class="bg-white text-gray-700 font-semibold py-2 px-4 rounded-full shadow-md border border-gray-300 hover:bg-gray-100 hover:-translate-y-1 transition-transform duration-200"
+      >
+        Ver mis ideas
+      </button>
+    </div>
+  </div>
+</div>

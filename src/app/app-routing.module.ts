@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core'; 
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { RegistrosComponent } from './pages/registros/registros.component';
@@ -11,11 +11,13 @@ import { RetoNuevoComponent } from './pages/reto-nuevo/reto-nuevo.component';
 import { IdeaDetailsComponent } from './pages/idea-details/idea-details.component';
 import { IdeaRevisionComponent } from './pages/idea-revision/idea-revision.component';
 import { BuscadorComponent } from './pages/buscador/buscador.component';
+import { InicioUsuarioComponent } from './pages/inicio-usuario/inicio-usuario.component';
 
 
 const routes: Routes = [
-  { path: '', component: InicioComponent },
-  { path: 'inicio', component: InicioComponent },
+  { path: '', component: InicioUsuarioComponent },
+  { path: 'inicio', component: InicioUsuarioComponent },
+  { path: 'admin/inicio', component: InicioComponent },
   { path: 'registros', component: RegistrosComponent },
   { path: 'agregar', component: AgregarComponent },
   { path: 'perfil', component: PerfilComponent },

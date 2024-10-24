@@ -41,7 +41,7 @@
 .logo {
   position: fixed;
   top: 10px;
-  left: 10px;
+  left: 60px;
   cursor: pointer;
   height: 60px;
   z-index: 1100; /* Por encima del sidebar */

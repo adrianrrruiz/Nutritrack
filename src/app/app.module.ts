@@ -18,12 +18,16 @@ import { PerfilComponent } from './pages/perfil/perfil.component';
 import { RegistrosComponent } from './pages/registros/registros.component';
 import { RetoNuevoComponent } from './pages/reto-nuevo/reto-nuevo.component';
 import { RetosActivosComponent } from './pages/retos-activos/retos-activos.component';
+import { InicioUsuarioComponent } from './pages/inicio-usuario/inicio-usuario.component';
 
 // PrimeNG Components
 import { SidebarModule } from 'primeng/sidebar';
 import { ButtonModule } from 'primeng/button';
 import { PanelMenuModule } from 'primeng/panelmenu';
 import { AccordionModule } from 'primeng/accordion';
+import { AvatarModule } from 'primeng/avatar';
+import { AvatarGroupModule } from 'primeng/avatargroup';
+import { BadgeModule } from 'primeng/badge';
 
 @NgModule({
   declarations: [
@@ -42,7 +46,8 @@ import { AccordionModule } from 'primeng/accordion';
     IdeaDetailsComponent,
     IdeaRevisionComponent,
     LayoutComponent,
-    BuscadorComponent
+    BuscadorComponent,
+    InicioUsuarioComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +56,10 @@ import { AccordionModule } from 'primeng/accordion';
     SidebarModule,
     ButtonModule,
     PanelMenuModule,
-    AccordionModule
+    AccordionModule,
+    AvatarModule,
+    AvatarGroupModule,
+    BadgeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
